@@ -6,11 +6,9 @@ target/
 mvnw
 mvnw.cmd
 .mvn/
-<<<<<<< HEAD
-
+.gitattributes
 
 =======
->>>>>>> b7b3a9ac1534048d697bae9768a4815101903eb5
 ### STS ###
 .apt_generated
 .classpath
