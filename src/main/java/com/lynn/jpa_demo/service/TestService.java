@@ -19,11 +19,11 @@ public class TestService {
   private final TestUserRepository testUserRepository;
 
 public void testRepo(){
-  List<TestUser> name = testUserRepository.findTestUserByName("Lynn");
+  List<TestUser> name = testUserRepository.findCustomByLastName("Lynn");
   log.info("name={}", name);
-  List<TestUser> lynn = testUserRepository.findTestUserByNameOrId("Lynn", null);
-  log.info("lynn={}", lynn);
-  List<TestUser> testUserByNameOrId = testUserRepository.findTestUserByNameOrId(null, 2L);
-  log.info("testUserByNameOrId={}", testUserByNameOrId);
+//  List<TestUser> lynn = testUserRepository.findTestUserByNameOrId("Lynn", null);
+//  log.info("lynn={}", lynn);
+//  List<TestUser> testUserByNameOrId = testUserRepository.findTestUserByNameOrId(null, 2L);
+//  log.info("testUserByNameOrId={}", testUserByNameOrId);
 }
 }

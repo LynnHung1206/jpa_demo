@@ -19,4 +19,6 @@ public class TestUser {
 
   private String birth;
 
+  private Long age;
+
 }
