@@ -24,7 +24,12 @@ public class TestController {
   @RequestMapping(value = "/test", method = {GET})
   public Object test() {
     log.info("----> in");
-    testService.testRepo();
+    testService.getRepo();
+    return ResponseEntity.ok().build();
+  }
+  @RequestMapping(value = "/borrow", method = {GET})
+  public Object borrowBook() {
+    testService.borrowBook();
     return ResponseEntity.ok().build();
   }
 }

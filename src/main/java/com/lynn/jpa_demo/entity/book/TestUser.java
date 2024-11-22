@@ -1,6 +1,8 @@
-package com.lynn.jpa_demo.entity;
+package com.lynn.jpa_demo.entity.book;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 
@@ -13,11 +15,10 @@ import java.sql.Timestamp;
 @Data
 public class TestUser {
   @Id
+  @GeneratedValue(strategy = GenerationType.SEQUENCE)
   private Long id;
 
   private String name;
-
-  private String birth;
 
   private Long age;
 

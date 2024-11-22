@@ -1,6 +1,6 @@
-package com.lynn.jpa_demo.repo;
+package com.lynn.jpa_demo.repo.book;
 
-import com.lynn.jpa_demo.entity.TestUser;
+import com.lynn.jpa_demo.entity.book.TestUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
