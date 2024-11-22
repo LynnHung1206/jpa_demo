@@ -25,4 +25,7 @@ public interface TestUserRepository extends JpaRepository<TestUser,Long> {
   @Query(value = "SELECT * FROM test_user WHERE name = :name", nativeQuery = true)
   List<TestUser> findCustomByLastName(@Param("name") String name);
 
+
+
+
 }
